@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!--Frequencies must be set in Hz, time instants - in seconds-->
+<XmlTestConfig>
+    <TestsDescription name="LOCALIZER TEST">
+        <LocalizationType freq_channels="true" freq_channels_bursting_type="false" freq_channels_bursts="false" irregular_transmitted_bursts="false" group_bursts="false"/>
+        <SignalType relay_radio="false" sattellite="true" terrestrial="false" aero ="false"/>
+        <AnalysisType carr_in_carr="false" comm_sys="false" modulation="false"/>
+    </TestsDescription>
+    <Test>
+        <SignalsBunch>
+            <SignalStream>
+                <FilePath>\\192.168.1.41\signals\AsTests\Sattelite\WidebandGroups\LocalizerTests\04.06.2015 18_57_07_1212,98MHz 20722.2KHz.pcm</FilePath>
+                <StreamParams sample_type="0" sample_rate="2.07222e+007" freq_center="0" />
+                <Selection freq_start="-5e+006" freq_end="5e+006" time_start="0" time_end="0.482574" />
+            </SignalStream>
+        </SignalsBunch>
+        <SignalsInSelection>
+            <Signal>
+                <SignalType modulation="0" system_id="0" symbol_rate="0" />
+                <Location freq_center="-4.23607e+006" bandwidth="505281" time_start="0" time_end="0" />
+                <AdditionalParams is_spectrum_inv="0" is_bursting="0" snr="0" est_prob="0" />
+                <SystemParams duplex_type="0" link_direction="-1" separation_dl_ul="0" multiple_access_type="0" sfn_flag="0" />
+                <StandardAllocation is_inband="0" freq_center_std="0" band_number_std="0" channel_number_std="0" band_low="0" band_high="0" />
+                <OFDMParams is_ofdm="0" nfft="0" cp_length="0" />
+            </Signal>
+            <Signal>
+                <SignalType modulation="0" system_id="0" symbol_rate="0" />
+                <Location freq_center="-3.69822e+006" bandwidth="564093" time_start="0" time_end="0" />
+                <AdditionalParams is_spectrum_inv="0" is_bursting="0" snr="0" est_prob="0" />
+                <SystemParams duplex_type="0" link_direction="-1" separation_dl_ul="0" multiple_access_type="0" sfn_flag="0" />
+                <StandardAllocation is_inband="0" freq_center_std="0" band_number_std="0" channel_number_std="0" band_low="0" band_high="0" />
+                <OFDMParams is_ofdm="0" nfft="0" cp_length="0" />
+            </Signal>
+            <Signal>
+                <SignalType modulation="0" system_id="0" symbol_rate="0" />
+                <Location freq_center="-3.16986e+006" bandwidth="488839" time_start="0" time_end="0" />
+                <AdditionalParams is_spectrum_inv="0" is_bursting="0" snr="0" est_prob="0" />
+                <SystemParams duplex_type="0" link_direction="-1" separation_dl_ul="0" multiple_access_type="0" sfn_flag="0" />
+                <StandardAllocation is_inband="0" freq_center_std="0" band_number_std="0" channel_number_std="0" band_low="0" band_high="0" />
+                <OFDMParams is_ofdm="0" nfft="0" cp_length="0" />
+            </Signal>
+            <Signal>
+                <SignalType modulation="0" system_id="0" symbol_rate="0" />
+                <Location freq_center="-2.64023e+006" bandwidth="566623" time_start="0" time_end="0" />
+                <AdditionalParams is_spectrum_inv="0" is_bursting="0" snr="0" est_prob="0" />
+                <SystemParams duplex_type="0" link_direction="-1" separation_dl_ul="0" multiple_access_type="0" sfn_flag="0" />
+                <StandardAllocation is_inband="0" freq_center_std="0" band_number_std="0" channel_number_std="0" band_low="0" band_high="0" />
+                <OFDMParams is_ofdm="0" nfft="0" cp_length="0" />
+            </Signal>
+            <Signal>
+                <SignalType modulation="0" system_id="0" symbol_rate="0" />
+                <Location freq_center="-2.11187e+006" bandwidth="483779" time_start="0" time_end="0" />
+                <AdditionalParams is_spectrum_inv="0" is_bursting="0" snr="0" est_prob="0" />
+                <SystemParams duplex_type="0" link_direction="-1" separation_dl_ul="0" multiple_access_type="0" sfn_flag="0" />
+                <StandardAllocation is_inband="0" freq_center_std="0" band_number_std="0" channel_number_std="0" band_low="0" band_high="0" />
+                <OFDMParams is_ofdm="0" nfft="0" cp_length="0" />
+            </Signal>
+            <Signal>
+                <SignalType modulation="0" system_id="0" symbol_rate="0" />
+                <Location freq_center="-1.58066e+006" bandwidth="574844" time_start="0" time_end="0" />
+                <AdditionalParams is_spectrum_inv="0" is_bursting="0" snr="0" est_prob="0" />
+                <SystemParams duplex_type="0" link_direction="-1" separation_dl_ul="0" multiple_access_type="0" sfn_flag="0" />
+                <StandardAllocation is_inband="0" freq_center_std="0" band_number_std="0" channel_number_std="0" band_low="0" band_high="0" />
+                <OFDMParams is_ofdm="0" nfft="0" cp_length="0" />
+            </Signal>
+            <Signal>
+                <SignalType modulation="0" system_id="0" symbol_rate="0" />
+                <Location freq_center="-694682" bandwidth="1.19585e+006" time_start="0" time_end="0" />
+                <AdditionalParams is_spectrum_inv="0" is_bursting="0" snr="0" est_prob="0" />
+                <SystemParams duplex_type="0" link_direction="-1" separation_dl_ul="0" multiple_access_type="0" sfn_flag="0" />
+                <StandardAllocation is_inband="0" freq_center_std="0" band_number_std="0" channel_number_std="0" band_low="0" band_high="0" />
+                <OFDMParams is_ofdm="0" nfft="0" cp_length="0" />
+            </Signal>
+            <Signal>
+                <SignalType modulation="0" system_id="0" symbol_rate="0" />
+                <Location freq_center="532157" bandwidth="1.23759e+006" time_start="0" time_end="0" />
+                <AdditionalParams is_spectrum_inv="0" is_bursting="0" snr="0" est_prob="0" />
+                <SystemParams duplex_type="0" link_direction="-1" separation_dl_ul="0" multiple_access_type="0" sfn_flag="0" />
+                <StandardAllocation is_inband="0" freq_center_std="0" band_number_std="0" channel_number_std="0" band_low="0" band_high="0" />
+                <OFDMParams is_ofdm="0" nfft="0" cp_length="0" />
+            </Signal>
+            <Signal>
+                <SignalType modulation="0" system_id="0" symbol_rate="0" />
+                <Location freq_center="1.40138e+006" bandwidth="478088" time_start="0" time_end="0" />
+                <AdditionalParams is_spectrum_inv="0" is_bursting="0" snr="0" est_prob="0" />
+                <SystemParams duplex_type="0" link_direction="-1" separation_dl_ul="0" multiple_access_type="0" sfn_flag="0" />
+                <StandardAllocation is_inband="0" freq_center_std="0" band_number_std="0" channel_number_std="0" band_low="0" band_high="0" />
+                <OFDMParams is_ofdm="0" nfft="0" cp_length="0" />
+            </Signal>
+            <Signal>
+                <SignalType modulation="0" system_id="0" symbol_rate="0" />
+                <Location freq_center="1.93954e+006" bandwidth="586859" time_start="0" time_end="0" />
+                <AdditionalParams is_spectrum_inv="0" is_bursting="0" snr="0" est_prob="0" />
+                <SystemParams duplex_type="0" link_direction="-1" separation_dl_ul="0" multiple_access_type="0" sfn_flag="0" />
+                <StandardAllocation is_inband="0" freq_center_std="0" band_number_std="0" channel_number_std="0" band_low="0" band_high="0" />
+                <OFDMParams is_ofdm="0" nfft="0" cp_length="0" />
+            </Signal>
+            <Signal>
+                <SignalType modulation="0" system_id="0" symbol_rate="0" />
+                <Location freq_center="3.29381e+006" bandwidth="2.09258e+006" time_start="0" time_end="0" />
+                <AdditionalParams is_spectrum_inv="0" is_bursting="0" snr="0" est_prob="0" />
+                <SystemParams duplex_type="0" link_direction="-1" separation_dl_ul="0" multiple_access_type="0" sfn_flag="0" />
+                <StandardAllocation is_inband="0" freq_center_std="0" band_number_std="0" channel_number_std="0" band_low="0" band_high="0" />
+                <OFDMParams is_ofdm="0" nfft="0" cp_length="0" />
+            </Signal>
+        </SignalsInSelection>
+    </Test>
+</XmlTestConfig>
