@@ -97,7 +97,7 @@ def samples_for_second(data):
         peaks = find_peaks(samples_freq_abs)
         dict['freq'] = len(peaks[0])
 
-        dict['modulation']=data[i]['modulation']
+        dict['modulation'] = data[i]['modulation']
         dicts.append(dict)
     fields = ['FilePath', 'freq_center_signal', 'bandwidth_signal', 'pwr2', 'pwr4', 'pwr6', 'pwr8', 'pwr12', 'pwr16',
               'env', 'freq', 'modulation']
@@ -108,20 +108,17 @@ def samples_for_second(data):
 def parse(xmlFile):
     root_node = ET.parse(xmlFile).getroot()
     dicts = []
-
-    fp = root_node.findall('Test/SignalsBunch/SignalStream/FilePath')
-    fc_b = root_node.findall('Test/SignalsInSelection/Signal/Location')
-    fc_sr = root_node.findall('Test/SignalsBunch/SignalStream/StreamParams')
-    m = root_node.findall('Test/SignalsInSelection/Signal/SignalType')
-
-    for i in range(len(fp)):
-        for j in range(len(fc_b)):
+    for element in root_node.iterfind('Test'):
+        for el1 in element.iterfind('SignalsInSelection/Signal'):
             data = {}
-            data = {'FilePath': fp[i].text, 'freq_center_signal': float(fc_b[j].attrib['freq_center']),
-                    'bandwidth_signal': float(fc_b[j].attrib['bandwidth']),
-                    'freq_center': float(fc_sr[i].attrib['freq_center']), 'sample_rate': float(fc_sr[i].attrib['sample_rate']),
-                    'modulation': float(m[j].attrib['modulation'])}
+            data['FilePath'] = element.find('SignalsBunch/SignalStream/FilePath').text
+            data['freq_center'] = float(element.find('SignalsBunch/SignalStream/StreamParams').attrib['freq_center'])
+            data['sample_rate'] = float(element.find('SignalsBunch/SignalStream/StreamParams').attrib['sample_rate'])
+            data['freq_center_signal'] = float(el1.find('Location').attrib['freq_center'])
+            data['bandwidth_signal'] = float(el1.find('Location').attrib['bandwidth'])
+            data['modulation'] = float(el1.find('SignalType').attrib['modulation'])
             dicts.append(data)
+            print(data)
     return dicts
 
 
