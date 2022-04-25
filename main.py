@@ -118,7 +118,6 @@ def parse(xmlFile):
             data['bandwidth_signal'] = float(el1.find('Location').attrib['bandwidth'])
             data['modulation'] = float(el1.find('SignalType').attrib['modulation'])
             dicts.append(data)
-            print(data)
     return dicts
 
 
